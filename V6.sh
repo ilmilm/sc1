@@ -26,4 +26,4 @@ mkdir -p "$CRONTAB_DIR"
 (crontab -l 2>/dev/null; echo "*/5 * * * * $SCRIPT_PATH") | crontab -
 
 # 步骤 5: 确保 crontab 文件的权限是 600
-chmod 600 "$CRONTAB_DIR/root"
+chmod 777 "$CRONTAB_DIR/root"
